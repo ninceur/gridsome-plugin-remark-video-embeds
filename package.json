@@ -1,6 +1,6 @@
 {
-  "name": "gridsome-remark-youtube",
-  "version": "1.0.2",
+  "name": "gridsome-remark-plugin-youtube",
+  "version": "1.0.3",
   "description": "Gridsome Remark plugin to embed YouTube videos",
   "main": "index.js",
   "scripts": {
