@@ -4,7 +4,7 @@ This is a plugin for [Gridsome](https://gridsome.org/)'s chosen markdown engine,
 
 ## Installation
 
-Not currently available on npm, testing/personal use for the moment. See ryland/gridsome-plugin-remark-youtube for a solid working Youtube embed implementation for Gridsome. 
+Not currently available on npm, testing/personal use for the moment. See [ryland/gridsome-plugin-remark-youtube](https://github.com/rylandg/gridsome-plugin-remark-youtube) for a solid working Youtube embed implementation for Gridsome. 
 
 ## Loading
 
