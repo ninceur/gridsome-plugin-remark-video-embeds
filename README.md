@@ -1,13 +1,10 @@
-# Gridsome Remark YouTube Plugin
+# Gridsome Remark Video Embeds Plugin
 
-This is a plugin for [Gridsome](https://gridsome.org/)'s chosen markdown engine, [Remark](https://remark.js.org/), and allows you to embed [YouTube](https://www.youtube.com/) videos in [markdown](https://daringfireball.net/projects/markdown/) files.
+This is a plugin for [Gridsome](https://gridsome.org/)'s chosen markdown engine, [Remark](https://remark.js.org/), and allows you to, currently, embed [YouTube](https://www.youtube.com/) and [Vimeo](https://vimeo.com) videos in [markdown](https://daringfireball.net/projects/markdown/) files.
 
 ## Installation
 
-```bash
-npm i gridsome-plugin-remark-youtube
-# yarn add gridsome-plugin-remark-youtube
-```
+Not currently available on npm, testing/personal use for the moment. See ryland/gridsome-plugin-remark-youtube for a solid working Youtube embed implementation for Gridsome. 
 
 ## Loading
 
@@ -21,7 +18,7 @@ module.exports = {
         route: '/blog/:year/:month/:day/:slug',
         remark: {
           plugins: [
-            ['gridsome-plugin-remark-youtube']
+            ['gridsome-plugin-remark-video-embeds']
           ]
         }
       }
@@ -49,7 +46,7 @@ module.exports = {
         route: '/blog/:year/:month/:day/:slug',
         remark: {
           plugins: [
-            ['gridsome-plugin-remark-youtube', {width: '500px', align: 'auto'}]
+            ['gridsome-plugin-remark-video-embeds', {width: '500px', align: 'auto'}]
           ]
         }
       }
@@ -61,18 +58,14 @@ module.exports = {
 
 ## Usage
 
-This plugin uses the same markdown syntax as the Gatsby plugin, with backticks (\`) and a `youtube:` prefix, followed by the YouTube URL. Any valid YouTube URL _should_ work.
+This plugin borrows the syntax used in the Gatsby Instagram Embed plugin, and my in-progress instagram embed plugin (paused due to Facebook) of using Markdown image alt tags `![youtube](video-id)` to embed posts.
 
 ```markdown
-`youtube:https://www.youtube.com/watch?v=dQw4w9WgXcQ`
+`![youtube](dQw4w9WgXcQ)`
 
-or
+Vimeo
 
-`youtube:https://www.youtube.com/embed/dQw4w9WgXcQ`
-
-or
-
-`youtube:https://youtu.be/dQw4w9WgXcQ`
+`![vimeo](dQw4w9WgXcQ)`
 ```
 
 ## Output
@@ -97,10 +90,4 @@ MIT
 
 ## Credit
 
-Some of the code in this plugin was copied from the Gatsby plugin for embedding YouTube videos in markdown:
-
-https://github.com/ntwcklng/gatsby-remark-embed-youtube
-
-To figure out how to convert the above plugin to a Gridsome plugin, I cribbed from Gridsome's Twitter Remark plugin:
-
-https://github.com/danvega/gridsome-plugin-remark-twitter
+This plugin is a combination of the [Gatsby Instagram](https://github.com/pamo/gatsby-remark-instagram-embed) embed syntax and [Gridsome Remark Youtube plugin](https://github.com/rylandg/gridsome-plugin-remark-youtube) for handling the Gridsome specific implementation. 
