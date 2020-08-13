@@ -1,16 +1,16 @@
 {
-  "name": "gridsome-remark-plugin-youtube",
+  "name": "gridsome-plugin-remark-video-embeds",
   "version": "1.0.3",
-  "description": "Gridsome Remark plugin to embed YouTube videos",
+  "description": "Gridsome Remark plugin to embed videos",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Ryland Goldstein <rylandgoldstein@gmail.com>",
-  "homepage": "https://github.com/markhoney/gridsome-plugin-remark-youtube",
+  "author": "Sean Edevane <sean@muimedia.com>",
+  "homepage": "https://github.com/ninceur/gridsome-plugin-remark-video-embeds",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rylandg/gridsome-plugin-remark-youtube.git"
+    "url": "https://github.com/ninceur/gridsome-plugin-remark-video-embeds.git"
   },
   "bugs": {
     "url": "https://github.com/rylandg/gridsome-plugin-remark-youtube/issues"
@@ -19,10 +19,9 @@
   "keywords": [
     "vue",
     "remark",
-    "gridsome",
-    "gridsome-plugin",
     "markdown",
-    "youtube"
+    "youtube",
+    "vimeo"
   ],
   "dependencies": {
     "unist-util-visit": "^1.4.0"
