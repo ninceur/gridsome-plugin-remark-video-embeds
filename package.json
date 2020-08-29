@@ -1,6 +1,6 @@
 {
   "name": "gridsome-plugin-remark-video-embeds",
-  "version": "1.0.3",
+  "version": "0.3.0",
   "description": "Gridsome Remark plugin to embed videos",
   "main": "index.js",
   "scripts": {
