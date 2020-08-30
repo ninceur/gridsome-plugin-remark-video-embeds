@@ -13,7 +13,7 @@ module.exports = (options) => {
 				node.value = `<div class="embed video-player" style="--aspect-ratio: 9 / 16;" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
 					<iframe
 						src="https://youtube.com/embed/${url}"
-						class="video-youtube" type="text/html"
+						class="video-youtube"
 						width="640" height="385"
 						allowfullscreen
 						frameborder="0"
@@ -31,7 +31,7 @@ module.exports = (options) => {
 				frameborder="0" 
 				webkitAllowFullScreen mozallowfullscreen allowFullScreen
 				>
-				</iframe>
+				</iframe> 
 			</div>`;
 		}
 		});
