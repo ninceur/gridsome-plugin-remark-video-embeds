@@ -16,7 +16,6 @@ module.exports = (options) => {
 						class="video-youtube"
 						width="640" height="385"
 						allowfullscreen
-						frameborder="0"
 						>
 					</iframe>
     			</div>`;
@@ -28,7 +27,6 @@ module.exports = (options) => {
 				src="https://player.vimeo.com/video/${url}"
 				class="video-vimeo"
 				width="640" height="385" 
-				frameborder="0" 
 				webkitAllowFullScreen mozallowfullscreen allowFullScreen
 				>
 				</iframe> 
