@@ -10,7 +10,7 @@ module.exports = (options) => {
 			const { alt = '', url = '' } = node;
 			if (alt === 'youtube') {
 				node.type = 'html';
-				node.value = `<div class="embed video-player" style="--aspect-ratio: 9 / 16;" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+				node.value = `<div class="embed video-player" style="--aspect-ratio: 9 / 16;" itemscope itemtype="http://schema.org/VideoObject">
 					<iframe
 						src="https://youtube.com/embed/${url}"
 						class="video-youtube"
@@ -22,12 +22,12 @@ module.exports = (options) => {
 			}
 		else if (alt === 'vimeo') {
 			node.type = 'html';
-			node.value = `<div class="embed video-player" style="--aspect-ratio: 9 / 16;" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+			node.value = `<div class="embed video-player" style="--aspect-ratio: 9 / 16;" itemscope itemtype="http://schema.org/VideoObject">
 				<iframe  
 				src="https://player.vimeo.com/video/${url}"
 				class="video-vimeo"
 				width="640" height="385" 
-				webkitAllowFullScreen mozallowfullscreen allowFullScreen
+				allowFullScreen
 				>
 				</iframe> 
 			</div>`;
